@@ -38,4 +38,10 @@ def load_embeddings():
 
 def main():
     filename = "peterpan.txt"
+    paragraphs = parse_file(filename)
+    embeddings = get_embeddings("nomic-embed-text:latest", paragraphs[5:90])
+    print(paragraphs[:10])
     pass
+
+if __name__ == "__main__":
+    main()

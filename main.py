@@ -24,8 +24,9 @@ def parse_file(filename):
         return paragraphs  
     
 
-def get_embeddings():
-    return ollama.embeddings
+def get_embeddings(model_name, chunks):
+    return [ollama.embed(model=model_name, input=chunk).embeddings[0]
+            for chunk in chunks]
     pass
     
 def save_embeddings():

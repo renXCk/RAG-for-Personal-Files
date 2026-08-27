@@ -40,6 +40,9 @@ def load_embeddings(filename):
         return False
     with open(f"embeddings/{filename}.json", "r") as f:
         return json.load(f)
+        
+
+#implement chunking
     
 def get_embeddings(filename, model_name, chunks):
     if (embeddings == load_embeddings(filename)):

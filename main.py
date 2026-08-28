@@ -1,4 +1,4 @@
-#barebones RAG implementation 
+#barebones RAG implementation will update
 
 #open the file(s) 
 #parse the file(s)

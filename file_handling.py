@@ -2,7 +2,7 @@ from pathlib import Path
 import pypdf
 import docx  
 
-# To extract different file types 
+
 def load_pdf(path: Path) -> str:
     reader = pypdf.PdfReader(str(path))
     return "\n".join(page.extract_text() or "" for page in reader.pages)

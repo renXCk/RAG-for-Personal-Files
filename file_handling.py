@@ -21,7 +21,7 @@ LOADERS = {
     ".md": load_text,
 }
 
-def walk_and_extract(root_folder: str):
+def extract_files(root_folder: str):
     """Yields the filepath and the raw text for every supported file in the root folder."""
     root = Path(root_folder)
     for path in root.rglob("*"):
@@ -37,6 +37,6 @@ def walk_and_extract(root_folder: str):
 
 if __name__ == "__main__":
     import sys
-    for filepath, text in walk_and_extract(sys.argv[1]):
+    for filepath, text in extract_files(sys.argv[1]):
         print(f"--- {filepath} ({len(text)} chars) ---")
         print(text[:200], "...\n")

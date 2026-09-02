@@ -1,10 +1,5 @@
 #barebones RAG implementation
 
-#open the file(s) 
-#parse the file(s)
-#get embeddings for the file 
-#save embeddings to a vector database
-#load embeddings 
 import ollama
 import numpy as np
 import os

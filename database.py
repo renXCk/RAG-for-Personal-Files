@@ -1,3 +1,5 @@
+#database.py
+
 import chromadb
 
 client = chromadb.PersistentClient(path="./chroma_data")

@@ -1,4 +1,5 @@
-#barebones RAG implementation
+#
+#RAG implementation
 
 import ollama
 import numpy as np

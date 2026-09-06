@@ -1,4 +1,3 @@
-#
 #RAG implementation
 
 import ollama

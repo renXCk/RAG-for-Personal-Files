@@ -1,5 +1,3 @@
-#RAG implementation
-
 import ollama
 import numpy as np
 import os
